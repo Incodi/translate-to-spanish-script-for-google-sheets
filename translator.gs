@@ -32,6 +32,9 @@ function updatePublicSheet() {
             // Translate to Spanish using Google's Google Translate
             const translated = LanguageApp.translate(cellValue, '', 'es');
             newRow[colIndex] = translated;
+
+            Utilities.sleep(1000);
+
           } catch (error) { // there may be errors
             console.log(`Failed to translate: "${cellValue}"`, error);
             newRow[colIndex] = cellValue;
