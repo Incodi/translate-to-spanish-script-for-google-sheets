@@ -1,5 +1,8 @@
 # translate-to-spanish-script-for-google-sheets
 
+WIP: Will need to make sure the script is wary of rate limits, by doing runs in batches.
+
+
 App script to translate a Sheet in the active spreadsheet in Google Sheets.
 
 This is good for small data sets, but does not scale well as it duplicates the target sheet to make a translated one.
